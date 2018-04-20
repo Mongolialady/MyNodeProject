@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Welcome Page</title>
+<script>
+function calFact(){
+	var num = documen t.cafForm.num.value;
+	$.getJSON("http://localhost:3000/fact?num="+pnum, function(request, response){
+		consol.log(response);
+	});
+}
+</script>
+</head>
+<body>
+   <header style="height: 30px;background-color: ">
+   </header>
+   <img  src="img/profilepic.png" style="height: 120px;"/>
+ <h2>Factorial</h2>
+   <hr/>
+   <form name="cafForm">
+   			 Enter num  :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<input type="text" name="num"  
+   			 style="height: 26px;background-color: pink;"/>
+   			 <br/><br/>
+   			 <input type="button" value="Go Ahead"/>
+   </form>
+</body>
+</html>
